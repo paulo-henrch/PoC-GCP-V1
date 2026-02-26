@@ -1,6 +1,6 @@
 steps:
-steps:
-- name: "us-docker.pkg.dev/firebase-cli/us/firebase"
-   args: ['deploy', '--project=poc-gcp-v1-487401', '--only=hosting']
+  - name: "us-docker.pkg.dev/firebase-cli/us/firebase"
+    args: ["deploy", "--project=poc-gcp-v1-487401", "--only=hosting"]
+
 options:
   logging: CLOUD_LOGGING_ONLY
