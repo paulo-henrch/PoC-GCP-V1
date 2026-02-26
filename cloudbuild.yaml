@@ -1,16 +1,6 @@
 steps:
-  - name: "gcr.io/cloud-builders/gcloud"
-    entrypoint: "bash"
-    args:
-      - "-c"
-      - |
-        echo "Trigger OK ✅"
-        echo "Project: $PROJECT_ID"
-        echo "Build ID: $BUILD_ID"
-        echo "Commit SHA: $COMMIT_SHA"
-        echo "Branch: $BRANCH_NAME"
-        echo "Repo: $REPO_NAME"
-        echo "Time: $(date)"
-        ls -la
+steps:
+- name: "us-docker.pkg.dev/firebase-cli/us/firebase"
+   args: ['deploy', '--project=poc-gcp-v1-487401', '--only=hosting']
 options:
   logging: CLOUD_LOGGING_ONLY
