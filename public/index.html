@@ -1,12 +1,40 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PoC GCP V1</title>
-  </head>
-  <body>
-    <h1>PoC GCP V1</h1>
-    <p>Deploy automático via GitHub → Cloud Build → Firebase Hosting...</p>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste DevOps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .box {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>🚀 Aplicação no ar!</h1>
+    <p>Se você está vendo isso, o deploy funcionou.</p>
+    <p><strong>Ambiente:</strong> TESTE</p>
+    <p id="data"></p>
+  </div>
+
+  <script>
+    const data = new Date();
+    document.getElementById("data").innerText =
+      "Data/Hora: " + data.toLocaleString();
+  </script>
+
+</body>
 </html>
